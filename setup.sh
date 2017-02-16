@@ -32,3 +32,6 @@ cd ..
 catkin_make
 echo "source ~/sac/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+
+# Move the utility scripts to the workspace
+cp gitPull.sh ../sac/
