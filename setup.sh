@@ -21,12 +21,13 @@ source devel/setup.bash
 
 # Get the projects for the workspace
 cd src
-git clone https://github.com/greenpro/sac_drivers.git
-git clone https://github.com/greenpro/sac_translators.git
-git clone https://github.com/greenpro/sac_gazebo.git
-git clone https://github.com/greenpro/sac_description.git
 git clone https://github.com/greenpro/sac_config.git
 git clone https://github.com/greenpro/sac_controllers.git
+git clone https://github.com/greenpro/sac_description.git
+git clone https://github.com/greenpro/sac_drivers.git
+git clone https://github.com/greenpro/sac_gazebo.git
+git clone https://github.com/greenpro/sac_launch.git
+git clone https://github.com/greenpro/sac_translators.git
 cd ..
 catkin_make
 echo "source ~/sac/devel/setup.bash" >> ~/.bashrc
