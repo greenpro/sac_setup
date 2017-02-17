@@ -34,4 +34,5 @@ echo "source ~/sac/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # Move the utility scripts to the workspace
-cp gitPull.sh ../sac/
+cp ~/sac_setup/gitPull.sh gitPull.sh
+cp ~/sac_setup/gitPush.sh gitPush.sh
