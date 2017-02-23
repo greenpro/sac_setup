@@ -11,6 +11,7 @@ source ~/.bashrc
 # Install ROS packages
 sudo apt-get install python-rosinstall
 sudo apt-get install ros-kinetic-moveit
+sudo apt-get install ros-kinetic-moveit-visual-tools
 
 # Install Gazebo
 curl -ssL http://get.gazebosim.org | sh
@@ -34,6 +35,8 @@ git clone https://github.com/greenpro/sac_drivers.git
 git clone https://github.com/greenpro/sac_gazebo.git
 git clone https://github.com/greenpro/sac_launch.git
 git clone https://github.com/greenpro/sac_translators.git
+git clone https://github.com/greenpro/scorbot_config.git
+git clone https://github.com/greenpro/andreas_arm_config.git
 cd ..
 catkin_make
 echo "source ~/sac/devel/setup.bash" >> ~/.bashrc

@@ -19,4 +19,10 @@ git pull
 cd ../sac_launch
 git pull
 
+cd ../scorbot_config
+git pull
+
+cd ../andreas_arm_config
+git pull
+
 cd ../..
