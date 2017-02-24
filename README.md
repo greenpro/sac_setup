@@ -1,8 +1,8 @@
-# Southern Arm Control Setup
+## Southern Arm Control Setup
 
 This project contains files for the setup of the Southern Arm Control project and for the setup of the Ubutu and Raspian environments for the use of ROS.
 
-## Files ##
+** Files **
 
 gitPush.sh
     * To push all of the projects in the workspace run this script (the comment entered will be used for all of the projects).
