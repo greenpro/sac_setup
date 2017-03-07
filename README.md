@@ -25,3 +25,6 @@ setup.sh
 
 rpiSetup.sh
 * Run this script to setup the programs, workspace, and projects for the Southern Arm Control project on Raspian.
+
+## General ROS Notes
+* When generating messages and services create the service, build it, and make sure the *.h files have been generated before #including the files in any source files. This is because the service headers are generated last in the cmake process.
