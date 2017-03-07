@@ -26,5 +26,6 @@ setup.sh
 rpiSetup.sh
 * Run this script to setup the programs, workspace, and projects for the Southern Arm Control project on Raspian.
 
-## General ROS Notes
+## General SAC project notes
 * When generating messages and services create the service, build it, and make sure the *.h files have been generated before #including the files in any source files. This is because the service headers are generated last in the cmake process.
+* When running the gitPush.sh on "Bash on Ubuntu on Windows" "cache" in the first line might need to be changed to "no-cache".
