@@ -34,18 +34,20 @@ rpiSetup.sh
 2. Obtain an 8Gb class 10 micro SD card for the pi (lower class levels will work but will be much slower)
 3. Install either Raspian Jessie with Pixel or Raspian Jessie Lite on the SD card using win32DiskImager if on windows.
 4. Setup Raspian as you like on the RPi installing any programs you would like to have (run "sudo raspi-config" to setup any RPi features of the pi itself).
-5. Clone this project into the home directory of the RPi.
-6. Run rpiSetup.sh, this will install ros, the sac project, a ROS workspace, and all other items for the project.
-7. The sac_setup project can now be removed from the RPi if desired.
-8. Follow the instructions in the sac project for running, modifying, and using the projects.
+5. Install git.
+6. Clone this project into the home directory of the RPi.
+7. Run rpiSetup.sh, this will install ros, the sac project, a ROS workspace, and all other items for the project.
+8. The sac_setup project can now be removed from the RPi if desired.
+9. Follow the instructions in the sac project for running, modifying, and using the projects.
 
 ### Ubuntu 16.04
 1. Install Ubuntu 16.04 on either a computer or a virtual machine.
 2. Setup Ubuntu as you like installing any programs you would like to have.
-3. Clone this project into the home directory of Ubuntu
-4. Run setup.sh, this will install ros, the sac project, a ROS workspace, and all other items for the project.
-5. The sac_setup project can now be removed from Ubuntu if desired.
-6. Follow the instructions in the sac project for running, modifying, and using the projects.
+3. Install git.
+4. Clone this project into the home directory of Ubuntu
+5. Run setup.sh, this will install ros, the sac project, a ROS workspace, and all other items for the project.
+6. The sac_setup project can now be removed from Ubuntu if desired.
+7. Follow the instructions in the sac project for running, modifying, and using the projects.
 
 ## General SAC project notes
 * When generating messages and services create the service, build it, and make sure the *.h files have been generated before #including the files in any source files. This is because the service headers are generated last in the cmake process.
