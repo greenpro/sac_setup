@@ -27,13 +27,14 @@ setup.sh
 rpiSetup.sh
 * Run this script to setup the programs, workspace, and projects for the Southern Arm Control project on Raspian.
 * Much of the code for this script comes from http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Indigo%20on%20Raspberry%20Pi.
+* The note at the top of the page that you can use the regular ros setup for the RPi 3 is wrong it does not work currently.
 
 ## Installation
 ### Raspberry Pi
 1. Obtain a Raspberry Pi (RPi) 3 (the project should also work on an RPi 2).
 2. Obtain an 8Gb class 10 micro SD card for the pi (lower class levels will work but will be much slower)
 3. Install either Raspian Jessie with Pixel or Raspian Jessie Lite on the SD card using win32DiskImager if on windows.
-4. Setup Raspian as you like on the RPi installing any programs you would like to have (run "sudo raspi-config" to setup any RPi features of the pi itself).
+4. Setup Raspian as you like on the RPi installing any programs you would like to have (run "sudo raspi-config" to setup any RPi features of the pi itself, don't forget to change the keyboard layout to English (US), you will need to reboot for this to take effect).
 5. Install git.
 6. Clone this project into the home directory of the RPi.
 7. Run rpiSetup.sh, this will install ros, the sac project, a ROS workspace, and all other items for the project.

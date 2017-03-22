@@ -2,7 +2,8 @@
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu jessie main" > /etc/apt/sources.list.d/ros-latest.list'
 wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install python-pip python-setuptools python-yaml python-distribute python-docutils python-dateutil python-six
+sudo apt-get upgrade
+sudo apt-get install -y python-pip python-setuptools python-yaml python-distribute python-docutils python-dateutil python-six
 sudo pip install rosdep rosinstall_generator wstool rosinstall
 sudo rosdep init
 rosdep update
@@ -11,6 +12,8 @@ mkdir ~/ros_catkin_ws
 cd ~/ros_catkin_ws
 rosinstall_generator ros_comm --rosdistro kinetic --deps --wet-only --exclude roslisp --tar > kinetic-ros_comm-wet.rosinstall
 wstool init src kinetic-ros_comm-wet.rosinstall
+rosdep install --from-paths src --ignore-src --rosdistro kinetic -y -r --os=debian:jessie
+sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/kinetic
 
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
