@@ -22,9 +22,30 @@ setupPull.sh
 
 setup.sh
 * Run this script to setup the programs, workspace, and projects for the Southern Arm Control project on Ubuntu.
+* Much of the code for this script comes from http://wiki.ros.org/kinetic/Installation/Ubuntu.
 
 rpiSetup.sh
 * Run this script to setup the programs, workspace, and projects for the Southern Arm Control project on Raspian.
+* Much of the code for this script comes from http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Indigo%20on%20Raspberry%20Pi.
+
+## Installation
+### Raspberry Pi
+1. Obtain a Raspberry Pi (RPi) 3 (the project should also work on an RPi 2).
+2. Obtain an 8Gb class 10 micro SD card for the pi (lower class levels will work but will be much slower)
+3. Install either Raspian Jessie with Pixel or Raspian Jessie Lite on the SD card using win32DiskImager if on windows.
+4. Setup Raspian as you like on the RPi installing any programs you would like to have (run "sudo raspi-config" to setup any RPi features of the pi itself).
+5. Clone this project into the home directory of the RPi.
+6. Run rpiSetup.sh, this will install ros, the sac project, a ROS workspace, and all other items for the project.
+7. The sac_setup project can now be removed from the RPi if desired.
+8. Follow the instructions in the sac project for running, modifying, and using the projects.
+
+### Ubuntu 16.04
+1. Install Ubuntu 16.04 on either a computer or a virtual machine.
+2. Setup Ubuntu as you like installing any programs you would like to have.
+3. Clone this project into the home directory of Ubuntu
+4. Run setup.sh, this will install ros, the sac project, a ROS workspace, and all other items for the project.
+5. The sac_setup project can now be removed from Ubuntu if desired.
+6. Follow the instructions in the sac project for running, modifying, and using the projects.
 
 ## General SAC project notes
 * When generating messages and services create the service, build it, and make sure the *.h files have been generated before #including the files in any source files. This is because the service headers are generated last in the cmake process.
