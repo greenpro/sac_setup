@@ -17,8 +17,6 @@ source ~/.bashrc
 
 # Install ROS packages
 sudo apt-get install python-rosinstall
-sudo apt-get install ros-kinetic-moveit
-sudo apt-get install ros-kinetic-moveit-visual-tools
 
 # Install Gazebo
 curl -ssL http://get.gazebosim.org | sh
