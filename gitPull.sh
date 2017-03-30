@@ -19,6 +19,9 @@ git pull
 cd ../sac_launch
 git pull
 
+cd ../sac_msgs
+git pull
+
 cd ../scorbot_config
 git pull
 

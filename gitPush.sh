@@ -40,6 +40,11 @@ git add .
 git commit -m "$COMMENT"
 git push
 
+cd ../sac_msgs
+git add .
+git commit -m "$COMMENT"
+git push
+
 cd ../scorbot_config
 git add .
 git commit -m "$COMMENT"
