@@ -51,7 +51,7 @@ These terms will apply to this and all other projects mention in the "Projects" 
 4. This workspace is ment to be used in overall robotics control education. In keeping with this the installation and use of the workspace should require as little knowlege of ROS and the nuts and bolts of the framework and system as possible to allow for a maximum amount of time spent working on algorithms and concepts.
 5. This workspace should include only currently develped ROS components. This will allow the project to keep current with new releases of ROS on current versions of Ubuntu and Raspian.
 6. Any code or examples of code used should be noted in the README.md in the description for the file the code was used in.
-7. All README.md files should follow the same format. This is to make the project more uniform and to simplify documentation.
+7. All README.md files should follow the same format as shown in the README_mainTemplate.md and README_subFolderTemplate.md. Each section of the template should be included only if it is applicable to the project or folder. This is to make the project more uniform and to simplify documentation.
 
 ## Installation
 ### Raspberry Pi
