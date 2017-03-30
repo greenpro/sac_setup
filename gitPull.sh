@@ -26,3 +26,5 @@ cd ../andreas_arm_config
 git pull
 
 cd ../..
+
+catkin_make

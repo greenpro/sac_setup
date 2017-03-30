@@ -1,5 +1,5 @@
 # cache the password for 15 minutes
-git config --global credential.helper cache
+#git config --global credential.helper cache
 
 echo "Enter a comment: "
 read COMMENT
