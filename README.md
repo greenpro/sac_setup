@@ -52,6 +52,7 @@ These terms will apply to this and all other projects mention in the "Projects" 
 5. This workspace should include only currently develped ROS components. This will allow the project to keep current with new releases of ROS on current versions of Ubuntu and Raspian.
 6. Any code or examples of code used should be noted in the README.md in the description for the file the code was used in.
 7. All README.md files should follow the same format as shown in the README_mainTemplate.md and README_subFolderTemplate.md. Each section of the template should be included only if it is applicable to the project or folder. This is to make the project more uniform and to simplify documentation.
+8. General launch senarios should be launched from the sac_launch project. The launch files in this project should only have includes for launch files in other projects. The other projects' launch files should only include launch files from the immediate project.
 
 ## Installation
 ### Raspberry Pi

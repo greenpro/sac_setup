@@ -1,4 +1,3 @@
-# Southern Arm Control Controllers > src
 # [Project name (spelled out no abreviations)] > [subFolder0Name] > [subFolder1Name]
 
 [Description for the contents of the folder]
