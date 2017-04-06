@@ -45,7 +45,7 @@ These terms will apply to this and all other projects mention in the "Projects" 
     This is an abreviation used for the Raspberry Pi.
 
 ## General Design Guidelines
-1. The projects in the SAC workspace should be as disjoint as possible (they should not depend on another project to build), with exception to the sac_launch, which depends on everything, and the sac_msgs, which everything depends on, these projects were created to make the others more independant of eachother.
+1. The projects in the SAC workspace should be as disjoint as possible (they should not depend on another project to build), with exception to the sac_launch, which depends on everything, and the sac_msgs, which everything depends on, these projects were created to make the others more independant of eachother. The other project dependancy is from the gazebo project to the description project and this should be removed later if possible.
 2. In keeping with the ROS methodology each node should do one task and nothing else, if another task is needed another node should be used for it.
 3. The README.md files in each folder should contain all the information for that folder needed by a developer.
 4. This workspace is ment to be used in overall robotics control education. In keeping with this the installation and use of the workspace should require as little knowlege of ROS and the nuts and bolts of the framework and system as possible to allow for a maximum amount of time spent working on algorithms and concepts.
@@ -112,3 +112,8 @@ These terms will apply to this and all other projects mention in the "Projects" 
 ## General SAC project notes
 * When generating messages and services create the service, build it, and make sure the *.h files have been generated before #including the files in any source files. This is because the service headers are generated last in the cmake process. This can be done by adding the project the message is in to the dependancies.
 * When running the gitPush.sh on "Bash on Ubuntu on Windows" "cache" in the first line might need to be changed to "no-cache".
+* When including a message from another project the project the message is in needs to be included in the find_packages of the CMakeLists.txt of the package using the remote message.
+* Joints in the urdf/xacro must all be in different positions if a joints x, y, and z are all 0 the joint will not be able to be controlled.
+* If the Gazebo simulator crashes when starting the launch file may need to be run again this is aparently an issue with Gazebo 8.
+* If changes are made to the robot description and the robot starts to go crazy moving this is because gazebo is very touchy on xacro parameters.
+* When running gazebo if it is switched to a wireframe in the view menu it will run much smoother.
