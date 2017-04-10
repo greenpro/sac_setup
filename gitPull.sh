@@ -19,7 +19,7 @@ git pull
 cd ../sac_msgs
 git pull
 
-cd src/sac_config
+cd ../sac_config
 git pull
 
 cd ../scorbot_config
