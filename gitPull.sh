@@ -1,4 +1,4 @@
-cd ../sac_controllers
+cd src/sac_controllers
 git pull
 
 cd ../sac_description
