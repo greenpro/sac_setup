@@ -117,3 +117,4 @@ These terms will apply to this and all other projects mention in the "Projects" 
 * If the Gazebo simulator crashes when starting the launch file may need to be run again this is aparently an issue with Gazebo 8.
 * If changes are made to the robot description and the robot starts to go crazy moving this is because gazebo is very touchy on xacro parameters.
 * When running gazebo if it is switched to a wireframe in the view menu it will run much smoother.
+* The robot is offset from the world frame by -0.090 in the y and  in the x.
