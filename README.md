@@ -33,16 +33,16 @@ rpiSetup.sh
 These terms will apply to this and all other projects mention in the "Projects" section below.
 
 ### SAC and sac
-    This is an abreviation for Southern Arm Control.
+This is an abreviation for Southern Arm Control.
 
 ### Workspace
-    For this and all other Southern Arm Control projects, the term workspace will refer to all of the SAC projects as they exist in a sigle ROS workspace.
+For this and all other Southern Arm Control projects, the term workspace will refer to all of the SAC projects as they exist in a sigle ROS workspace.
 
 ### Project
-    This refers to an individual project within the SAC workspace or the sac_setup project. These are all noted in the "Projects" section below.
+This refers to an individual project within the SAC workspace or the sac_setup project. These are all noted in the "Projects" section below.
 
 ### RPi
-    This is an abreviation used for the Raspberry Pi.
+This is an abreviation used for the Raspberry Pi.
 
 ## General Design Guidelines
 1. The projects in the SAC workspace should be as disjoint as possible (they should not depend on another project to build), with exception to the sac_launch, which depends on everything, and the sac_msgs, which everything depends on, these projects were created to make the others more independant of eachother. The other project dependancy is from the gazebo project to the description project and this should be removed later if possible.
