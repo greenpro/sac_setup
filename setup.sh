@@ -9,7 +9,7 @@ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # Install ROS packages
-sudo apt-get install -y python-rosinstall ros-kinetic-gazebo8-ros-pkgs ros-kinetic-gazebo8-ros-control ros-kinetic-ros-control ros-kinetic-ros-controllers
+sudo apt-get install -y python-rosinstall ros-kinetic-gazebo8-ros-pkgs ros-kinetic-gazebo8-ros-control ros-kinetic-ros-control ros-kinetic-ros-controllers ros-kinetic-moveit
 
 # Install Gazebo
 curl -ssL http://get.gazebosim.org | sh
