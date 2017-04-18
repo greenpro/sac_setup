@@ -30,4 +30,4 @@ git pull
 
 cd ../..
 
-catkin_make
+./build.sh
