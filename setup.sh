@@ -44,3 +44,7 @@ source ~/.bashrc
 # Move the utility scripts to the workspace
 cp ~/sac_setup/gitPull.sh gitPull.sh
 cp ~/sac_setup/gitPush.sh gitPush.sh
+cp ~/sac_setup/build.sh build.sh
+
+# Build the project
+./build.sh

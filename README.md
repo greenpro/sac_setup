@@ -2,7 +2,16 @@
 
 This project contains files for the setup of the Southern Arm Control project and for the setup of the Ubutu and Raspian environments for the use of ROS.
 
+## Build
+
+To build the project for the first time use the build.sh script from the sac directory. After this run "catkin_make". The first build after opening the terminal ". devel/setup.bash" may need to be run if catkin_make does not work.
+
 ## Files
+
+build.sh
+* This script can be used to build the project.
+* This script is necessary for now as ROS does not build the sac_msgs project the first time before building the others.
+* If you would like to delete this script after the first build it should be ok.
 
 gitPush.sh
 * To push all of the projects in the workspace run this script (the comment entered will be used for all of the projects).
