@@ -1,58 +1,58 @@
 # cache the password for 15 minutes
-#git config --global credential.helper cache
+git config --global credential.helper cache
 
 echo "Enter a comment: "
 read COMMENT
 echo "--$COMMENT--"
 
-cd src/sac_config
+cd ~/sac/src/sac_controllers
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ../sac_controllers
+cd ~/sac/src/sac_description
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ../sac_description
+cd ~/sac/src/sac_drivers
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ../sac_drivers
+cd ~/sac/src/sac_gazebo
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ../sac_gazebo
+cd ~/sac/src/sac_translators
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ../sac_translators
+cd ~/sac/src/sac_launch
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ../sac_launch
+cd ~/sac/src/sac_msgs
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ../sac_msgs
+cd ~/sac/src/sac_config
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ../scorbot_config
+cd ~sac/src/scorbot_config
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ../scorbot_config
+cd ~sac/src/scorbot_config
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ../..
+cd ~/sac

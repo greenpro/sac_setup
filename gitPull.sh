@@ -1,33 +1,33 @@
-cd src/sac_controllers
+cd ~/sac/src/sac_controllers
 git pull
 
-cd ../sac_description
+cd ~/sac/src/sac_description
 git pull
 
-cd ../sac_drivers
+cd ~/sac/src/sac_drivers
 git pull
 
-cd ../sac_gazebo
+cd ~/sac/src/sac_gazebo
 git pull
 
-cd ../sac_translators
+cd ~/sac/src/sac_translators
 git pull
 
-cd ../sac_launch
+cd ~/sac/src/sac_launch
 git pull
 
-cd ../sac_msgs
+cd ~/sac/src/sac_msgs
 git pull
 
-cd ../sac_config
+cd ~/sac/src/sac_config
 git pull
 
-cd ../scorbot_config
+cd ~/sac/src/scorbot_config
 git pull
 
-cd ../andreas_arm_config
+cd ~/sac/src/andreas_arm_config
 git pull
 
-cd ../..
+cd ~/sac
 
 ./build.sh
