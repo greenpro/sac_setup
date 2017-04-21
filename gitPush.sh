@@ -45,12 +45,12 @@ git add .
 git commit -m "$COMMENT"
 git push
 
-cd ~sac/src/scorbot_config
+cd ~/sac/src/scorbot_config
 git add .
 git commit -m "$COMMENT"
 git push
 
-cd ~sac/src/scorbot_config
+cd ~/sac/src/scorbot_config
 git add .
 git commit -m "$COMMENT"
 git push
