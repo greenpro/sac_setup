@@ -5,5 +5,4 @@ git add .
 git commit -m "$COMMENT"
 git push
 
-cp gitPush.sh ../sac/
-cp gitPull.sh ../sac/
+cp workspaceScripts/* ~/sac/
