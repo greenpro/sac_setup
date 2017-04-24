@@ -14,7 +14,7 @@ sudo apt-get install -y ros-kinetic-gazebo8-ros-pkgs
 sudo apt-get install -y ros-kinetic-gazebo8-ros-control 
 sudo apt-get install -y ros-kinetic-ros-control 
 sudo apt-get install -y ros-kinetic-ros-controllers 
-sudo apt-get install -y ros-kinetic-moveit
+#sudo apt-get install -y ros-kinetic-moveit
 
 # Install Gazebo
 curl -ssL http://get.gazebosim.org | sh
@@ -39,7 +39,7 @@ git clone https://github.com/greenpro/sac_launch.git
 git clone https://github.com/greenpro/sac_translators.git
 git clone https://github.com/greenpro/sac_msgs.git
 #git clone https://github.com/greenpro/sac_config.git
-git clone https://github.com/greenpro/scorbot_config.git
+#git clone https://github.com/greenpro/scorbot_config.git
 #git clone https://github.com/greenpro/andreas_arm_config.git
 cd ..
 catkin_make
