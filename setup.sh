@@ -20,17 +20,16 @@ sudo apt-get install -y ros-kinetic-ros-controllers
 curl -ssL http://get.gazebosim.org | sh
 
 # Setup the workspace
-cd ~/
 source /opt/ros/kinetic/setup.bash
-mkdir -p sac/src
-cd sac/src
+mkdir -p ~/sac/src
+cd ~/sac/src
 catkin_init_workspace
-cd ..
+cd ~/sac
 catkin_make
 source devel/setup.bash
 
 # Get the projects for the workspace
-cd src
+cd ~/sac/src
 git clone https://github.com/greenpro/sac_controllers.git
 git clone https://github.com/greenpro/sac_description.git
 git clone https://github.com/greenpro/sac_drivers.git
@@ -41,15 +40,32 @@ git clone https://github.com/greenpro/sac_msgs.git
 #git clone https://github.com/greenpro/sac_config.git
 #git clone https://github.com/greenpro/scorbot_config.git
 #git clone https://github.com/greenpro/andreas_arm_config.git
-cd ..
-catkin_make
+
+# Source the project
 echo "source ~/sac/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
-# Move the utility scripts to the workspace
-cp ~/sac_setup/workspaceScripts/gitPull.sh gitPull.sh
-cp ~/sac_setup/workspaceScripts/gitPush.sh gitPush.sh
-cp ~/sac_setup/workspaceScripts/build.sh build.sh
+# Get the gripper fix project
+mkdir ~/sac_setup/jennifer/src
+cd ~/sac_setup/jennifer/src
+catkin_init_workspace
+cd ~/sac_setup/jennifer/
+catkin_make
+source devel/setup
+git clone https://github.com/jenniferBuehler/gazebo-pkgs.git
+cp -a ~/sac_setup/jennifer/gazebo-pkgs/gazebo_grasp_plugin ~/sac_setup/jennifer/src/
+catkin_make
+cd ~/sac_setup
+rm -rf jennifer
 
+# Move the world objects into the gazebo world folder
+cp -a ~/sac_setup/objects/* ~/.gazebo/meshes/
+
+# Move the utility scripts to the workspace
+cp ~/sac_setup/workspaceScripts/* ~/sac/
+
+# Make the workspace
+cd ~/sac
+./build.sh
 # Build the project
 ./build.sh
