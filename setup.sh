@@ -37,9 +37,9 @@ git clone https://github.com/greenpro/sac_gazebo.git
 git clone https://github.com/greenpro/sac_launch.git
 git clone https://github.com/greenpro/sac_translators.git
 git clone https://github.com/greenpro/sac_msgs.git
-#git clone https://github.com/greenpro/sac_config.git
-#git clone https://github.com/greenpro/scorbot_config.git
-#git clone https://github.com/greenpro/andreas_arm_config.git
+git clone https://github.com/greenpro/sac_config.git
+git clone https://github.com/greenpro/scorbot_config.git
+git clone https://github.com/greenpro/andreas_arm_config.git
 
 # Source the project
 echo "source ~/sac/devel/setup.bash" >> ~/.bashrc
