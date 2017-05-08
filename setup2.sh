@@ -58,7 +58,7 @@ cp -a ~/sac_setup/jennifer/gazebo-pkgs/gazebo_grasp_plugin ~/sac_setup/jennifer/
 cd ~/sac_setup/jennifer/
 catkin_make
 cd ~/sac_setup
-#rm -rf jennifer
+rm -rf jennifer
 
 ## Move the world objects into the gazebo world folder
 #cp -a ~/sac_setup/objects/* ~/.gazebo/meshes/

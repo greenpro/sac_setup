@@ -1,2 +1,0 @@
-gazebo_grasp_plugin
--DCATKIN_DEVEL_PREFIX=/home/sac/sac_setup/jennifer/devel -DCMAKE_INSTALL_PREFIX=/home/sac/sac_setup/jennifer/install -G Unix Makefiles

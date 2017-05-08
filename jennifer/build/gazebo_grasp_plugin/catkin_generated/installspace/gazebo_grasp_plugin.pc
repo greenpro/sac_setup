@@ -1,8 +1,0 @@
-prefix=/home/sac/sac_setup/jennifer/install
-
-Name: gazebo_grasp_plugin
-Description: Description of gazebo_grasp_plugin
-Version: 1.0.1
-Cflags: -I/home/sac/sac_setup/jennifer/install/include
-Libs: -L/home/sac/sac_setup/jennifer/install/lib -lgazebo_grasp_fix
-Requires: gazebo_ros geometry_msgs roscpp std_msgs
