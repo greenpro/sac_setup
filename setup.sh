@@ -14,6 +14,7 @@ sudo apt-get install ros-kinetic-gazebo8-ros-pkgs
 sudo apt-get install ros-kinetic-gazebo8-ros-control 
 sudo apt-get install ros-kinetic-ros-control 
 sudo apt-get install ros-kinetic-ros-controllers 
+sudo apt-get install ros-kinetic-gazebo-ros
 #sudo apt-get install -y ros-kinetic-moveit
 
 # Install Gazebo
@@ -26,7 +27,7 @@ cd ~/sac/src
 catkin_init_workspace
 cd ~/sac
 catkin_make
-source devel/setup.bash
+. devel/setup.bash
 
 # Get the projects for the workspace
 cd ~/sac/src
@@ -46,7 +47,7 @@ echo "source ~/sac/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # Get the gripper fix project
-mkdir ~/sac_setup/jennifer/src
+mkdir -p ~/sac_setup/jennifer/src
 cd ~/sac_setup/jennifer/src
 catkin_init_workspace
 cd ~/sac_setup/jennifer/
@@ -54,6 +55,7 @@ catkin_make
 source devel/setup
 git clone https://github.com/jenniferBuehler/gazebo-pkgs.git
 cp -a ~/sac_setup/jennifer/gazebo-pkgs/gazebo_grasp_plugin ~/sac_setup/jennifer/src/
+cd ~/sac_setup/jennifer
 catkin_make
 cd ~/sac_setup
 rm -rf jennifer
@@ -66,6 +68,8 @@ cp ~/sac_setup/workspaceScripts/* ~/sac/
 
 # Make the workspace
 cd ~/sac
+. devel/setup.bash
 ./build.sh
+
 # Build the project
 ./build.sh
