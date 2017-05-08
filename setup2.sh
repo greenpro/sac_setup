@@ -52,13 +52,15 @@ cd ~/sac_setup/jennifer/src
 catkin_init_workspace
 cd ~/sac_setup/jennifer/
 catkin_make
-source devel/setup
+source devel/setup.bash
 git clone https://github.com/jenniferBuehler/gazebo-pkgs.git
-cp -a ~/sac_setup/jennifer/gazebo-pkgs/gazebo_grasp_plugin ~/sac_setup/jennifer/src/
-cd ~/sac_setup/jennifer/
+cp -a ~/sac_setup/jennifer/gazebo-pkgs/gazebo_grasp_fix ~/sac_setup/jennifer/src/
+rm -rf gazebo-pkgs
+cd ~/sac_setup/jennifer
 catkin_make
+catkin_make install
 cd ~/sac_setup
-rm -rf jennifer
+#rm -rf jennifer
 
 ## Move the world objects into the gazebo world folder
 #cp -a ~/sac_setup/objects/* ~/.gazebo/meshes/

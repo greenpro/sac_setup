@@ -29,14 +29,6 @@ This is an abreviation used for the Raspberry Pi.
 8. The sac_setup project can now be removed from the RPi if desired.
 9. Follow the instructions in the sac workspace for running, modifying, and using the packages.
 
-## Build
-
-To build the workspace for the first time use the build.sh script from the sac directory. After this run "catkin_make". The first build after opening the terminal ". devel/setup.bash" may need to be run if catkin_make does not work.
-
-## Run
-
-To run a project, go the ~/sac workspace and type $roslaunch sac_launch towers.launch$ or any of the other launch file names. These can be viewed in the ~/sac/sac_launch/launch/.
-
 ### Ubuntu 16.04
 1. Install Ubuntu 16.04 on either a computer or a virtual machine.
 2. Setup Ubuntu as you like installing any programs you would like to have.
@@ -45,6 +37,14 @@ To run a project, go the ~/sac workspace and type $roslaunch sac_launch towers.l
 5. Run setup.sh, this will install ros, the sac workspace, and all other items for the workspace.
 6. The sac_setup project can now be removed from Ubuntu if desired.
 7. Follow the instructions in the sac workspace for running, modifying, and using the packages.
+
+## Build
+
+To build the workspace for the first time use the build.sh script from the sac directory. After this run "catkin_make". The first build after opening the terminal ". devel/setup.bash" may need to be run if catkin_make does not work.
+
+## Run
+
+To run a project, go the ~/sac workspace and type "roslaunch sac_launch towers.launch" or any of the other launch file names. These can be viewed in the ~/sac/sac_launch/launch/.
 
 ## packages
 ### sac_setup
