@@ -8,6 +8,9 @@ rosdep update
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
+# Install Gazebo
+curl -ssL http://get.gazebosim.org | sh
+
 # Install ROS packages
 sudo apt-get install python-rosinstall 
 sudo apt-get install ros-kinetic-gazebo8-ros-pkgs 
@@ -16,9 +19,6 @@ sudo apt-get install ros-kinetic-ros-control
 sudo apt-get install ros-kinetic-ros-controllers 
 sudo apt-get install ros-kinetic-gazebo-ros
 #sudo apt-get install -y ros-kinetic-moveit
-
-# Install Gazebo
-curl -ssL http://get.gazebosim.org | sh
 
 # Setup the workspace
 source /opt/ros/kinetic/setup.bash
