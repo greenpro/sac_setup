@@ -58,7 +58,7 @@ source ~/.bashrc
 git clone https://github.com/jenniferBuehler/gazebo-pkgs.git
 #cp -a ~/sac_setup/jennifer/gazebo-pkgs/gazebo_grasp_fix ~/sac_setup/jennifer/src/
 cd ~/sac_setup/
-cp -a ~/sac_setup/gazebo-pkgs/gazebo_grasp_fix ~/sac/src/
+cp -a ~/sac_setup/gazebo-pkgs/gazebo_grasp_plugin ~/sac/src/
 rm -rf gazebo-pkgs
 #cd ~/sac_setup/jennifer
 #catkin_make
