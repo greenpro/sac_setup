@@ -1,6 +1,6 @@
 # Southern Arm Control Setup
 
-This project contains files for the setup of the Southern Arm Control workspace and for the setup of the Ubutu and Raspian environments for the use of ROS. More documentation and downloads can be found at craigcode1010.com along with other projects I am working on.
+This project contains files for the setup of the Southern Arm Control workspace and for the setup of the Ubutu and Raspian environments for the use of ROS. More documentation and downloads can be found at [CraigCode1010.com](craigcode1010.com) along with other projects I am working on.
 
 ## Terms
 These terms will apply to this and all other packages mention in the "packages" section below.
