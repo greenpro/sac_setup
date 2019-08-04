@@ -6,7 +6,7 @@ This project contains files for the setup of the Southern Arm Control workspace 
 These terms will apply to this and all other packages mention in the "packages" section below.
 
 ### SAC and sac
-This is an abreviation for Southern Arm Control.
+This is an abbreviation for Southern Arm Control.
 
 ### Workspace
 For this and all other Southern Arm Control packages, the term workspace will refer to all of the SAC packages as they exist in a sigle ROS workspace.
@@ -15,7 +15,7 @@ For this and all other Southern Arm Control packages, the term workspace will re
 This refers to an individual ROS package within the SAC workspace or the sac_setup project. These are all noted in the "Packages" section below.
 
 ### RPi
-This is an abreviation used for the Raspberry Pi.
+This is an abbreviation used for the Raspberry Pi.
 
 ## Installation
 ### Raspberry Pi
